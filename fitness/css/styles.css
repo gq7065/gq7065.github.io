@@ -69,9 +69,9 @@ main{
 }
 
 #weights, #cardio, #training{
-    width: 33.3%;
+    width: 29%;
     float: left;
-    max-width: 02%;
+    margin: 02%;
 }
 
 #exercises{
