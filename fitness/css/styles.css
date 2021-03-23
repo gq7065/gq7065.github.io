@@ -199,7 +199,32 @@ article:nth-of-type(2){
     text-decoration: none;
 }
 .map{
-    border: 8px solid #000;
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+#form{
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+#form h2 {
+    text-align: center;
+
+}
+/* style rules for form elements*/
+fieldset,input,select,textarea{
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display:block ;
+    padding-top: 3%;
 }
 /*style rules for the footer area*/
 
@@ -300,6 +325,32 @@ footer p a{
             height: 450px;
         }
 
+        /*tablet viewport: style rule for table*/
+        table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 100%;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 2%;
+        }
+        tr:nth-child(odd) {
+            background-color: #ccc;
+        }
+        /*tablet viewport: style rule for form elements*/
+        form {
+            width: 70%;
+            margin: auto;
+        }
+
+
     }
 
 
@@ -362,6 +413,18 @@ footer p a{
     #exercises{
         clear: left;
     }
+    /*desktop viewport: style rule for form elements*/
+    form{
+        width: auto;
+    }
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    .btn {
+        grid-column: 1 / span 3;
+    }
 
 }
 
@@ -370,6 +433,9 @@ footer p a{
     #container{
         width: 1920px;
         margin: 0 auto;
+    }
+    table {
+        width: 80%;
     }
 }
 /*medai query for print*/
